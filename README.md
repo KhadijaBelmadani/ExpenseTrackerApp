@@ -79,9 +79,9 @@ Implement user authentication using tools like JWT for token-based authenticatio
 3. Include a `LICENSE` file if applicable.
    
 ## ✨ Future Enhancements 
-Export expenses to Excel or PDF.
-Implement recurring expenses.
-Add dark mode for UI.
+Export expenses to Excel or PDF,
+Implement recurring expenses,
+Add dark mode for UI,
 
    
 
