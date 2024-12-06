@@ -1,0 +1,25 @@
+<div class="dashboard-container">
+    <router-outlet></router-outlet>
+    <!-- Tab navigation -->
+    <div class="tabs">
+      <button (click)="setActiveTab('add-expenses')" [class.active]="activeTab === 'add-expenses'">Add Expenses and Budget</button>
+      <button (click)="setActiveTab('view-expenses')" [class.active]="activeTab === 'view-expenses'">View Expenses</button>
+      <button (click)="setActiveTab('budget')" [class.active]="activeTab === 'budget'">Budget Progress</button>
+    </div>
+  
+    <!-- Display the content for the selected tab -->
+    <div class="tab-content">
+      <div *ngIf="activeTab === 'add-expenses'">
+        <app-set-budget></app-set-budget>
+        <app-add-expense></app-add-expense>
+      </div>
+      <div *ngIf="activeTab === 'view-expenses'">
+        <app-view-expenses></app-view-expenses>
+        <app-expenses-chart></app-expenses-chart>
+      </div>
+      <div *ngIf="activeTab === 'budget'">
+        <app-budget-progress></app-budget-progress>
+      </div>
+    </div>
+  </div>
+  

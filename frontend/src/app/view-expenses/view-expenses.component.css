@@ -1,0 +1,71 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 33.333%;
+    max-width: 30%;
+    padding: 0 10px;
+  }
+  
+  .expense-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .card-header small {
+    font-size: 0.85rem;
+    color: #555;
+  }
+  
+  .btn-delete {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .btn-delete::before,
+  .btn-delete::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 2px;
+    background-color: #000;
+    transform-origin: center;
+  }
+  
+  .btn-delete::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .btn-delete::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  .btn-delete:hover::before,
+  .btn-delete:hover::after {
+    background-color: #f00;
+  }
+  
+  .noData {
+    text-align: center;
+    color: #999;
+    font-size: 1.2rem;
+  }
+  

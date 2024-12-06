@@ -1,0 +1,38 @@
+<div>
+  <ng-container *ngIf="expenses.length > 0; else noArrayElements">
+    <div class="row">
+      <div *ngFor="let expense of expenses" class="col-md-4 col-sm-6 col-12">
+        <div class="expense-item">
+          <!-- Card Header -->
+          <div class="card-header">
+            <small>{{ expense.date }}</small>
+            <button class="btn-delete" (click)="deleteExpense(expense.id)"></button>
+          </div>
+          <hr />
+          <!-- Card Content -->
+          <div>
+            <small>Name</small><br />
+            <h2>{{ expense.description }}</h2>
+          </div>
+          <div class="details">
+            <div>
+              <small>Category</small>
+              <h2>{{ expense.category }}</h2>
+            </div>
+            <div class="text-right">
+              <small>Price</small>
+              <h2>{{ expense.amount  }} DH</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #noArrayElements>
+    <div class="row">
+      <div class="col-12 expense-item">
+        <h2 class="noData">No data</h2>
+      </div>
+    </div>
+  </ng-template>
+</div>

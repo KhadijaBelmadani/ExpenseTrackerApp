@@ -1,0 +1,55 @@
+.input-form{
+    text-align: center;
+  }
+  
+  h1{
+    text-align: center;
+    margin: 10px auto 20px;
+  }
+  
+  hr{
+    border-top: 1px solid rgba(245, 245, 245, 0.445);
+  }
+  
+  .top-part{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .list-block{
+    margin-top: 25px;
+    padding: 0 15px;
+  }
+  .input-form {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px auto 20px;
+}
+
+hr {
+  border-top: 1px solid rgba(245, 245, 245, 0.445);
+}
+
+.top-part {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-block {
+  margin-top: 25px;
+  padding: 0 15px;
+}
+
+.row {
+  margin-bottom: 20px;  /* Space between rows */
+}
+
+@media (max-width: 768px) {
+  /* On smaller screens, ensure the components take full width */
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
+}

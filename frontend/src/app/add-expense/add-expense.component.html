@@ -1,0 +1,55 @@
+<div class="add-expense">
+  <form class="input-form" id="add-product" (ngSubmit)="addExpense()">
+    <!-- Description Field -->
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <input
+        id="description"
+        type="text"
+        [(ngModel)]="expense.description"
+        name="description"
+        placeholder="Enter expense description"
+        required
+      />
+    </div>
+
+    <!-- Amount Field -->
+    <div class="form-group">
+      <label for="amount">Amount:</label>
+      <div class="input-group">
+        <input
+          id="amount"
+          type="number"
+          [(ngModel)]="expense.amount"
+          name="amount"
+          placeholder="Enter amount"
+          required
+        />
+        <span class="currency">DH</span>
+      </div>
+    </div>
+
+    <!-- Category Field -->
+    <div class="form-group">
+      <label for="category">Category:</label>
+      <select
+        id="category"
+        [(ngModel)]="expense.category"
+        name="category"
+        required
+      >
+        <option *ngFor="let category of categories" [value]="category">
+          {{ category }}
+        </option>
+      </select>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-actions">
+      <button type="submit" class="btn-add">
+        Add Expense 
+        <span></span>
+      </button>
+    </div>
+  </form>
+</div>

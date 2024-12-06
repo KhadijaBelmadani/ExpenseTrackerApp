@@ -1,0 +1,43 @@
+/* Card styling */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  border-radius: 10px 10px 0 0;
+  background-color: #4caf50; /* Slightly dark teal color */
+}
+
+/* Form Fields */
+.form-control {
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 16px;
+}
+
+/* Alert Box Styling */
+.alert {
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Button Styling */
+.btn {
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #3a933d;
+  border-color: #3a933d;
+}

@@ -1,0 +1,80 @@
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4caf50, #81c784); /* Gradient background */
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Header section with buttons */
+  .header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 50px;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Login button */
+  .login-btn {
+    background-color: #388e3c;
+  }
+  
+  .login-btn:hover {
+    background-color: #2c6d34;
+    transform: scale(1.05); /* Slight grow effect */
+  }
+  
+  /* Register button */
+  .register-btn {
+    background-color: #4caf50;
+  }
+  
+  .register-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slight grow effect */
+  }
+  
+  /* Content section with the title */
+  .content h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+  
+    .btn {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    .content h1 {
+      font-size: 2rem;
+    }
+  }
+  

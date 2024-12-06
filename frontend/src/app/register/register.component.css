@@ -1,0 +1,84 @@
+/* Container for the registration form */
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4caf50, #81c784); /* Gradient background */
+
+  }
+  
+  /* Form title */
+  .register-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form group */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Input styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  /* Input focus styles */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #267328;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+  }
+  
+  /* Submit button */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #267328;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Button focus effect */
+  .btn:focus {
+    outline: none;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 480px) {
+    .register-container {
+      padding: 30px;
+    }
+  
+    .btn {
+      font-size: 16px;
+    }
+  }
+  

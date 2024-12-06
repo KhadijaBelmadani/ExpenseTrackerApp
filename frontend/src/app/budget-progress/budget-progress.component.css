@@ -1,0 +1,28 @@
+.progress-bar-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 20px;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+  }
+  
+  .progress-bar.over-budget {
+    background-color: #f44336;
+  }
+  
+  .alert {
+    margin-top: 10px;
+  }
+  .snackbar-error {
+    background-color: #f44336;
+    color: white;
+  }
+  

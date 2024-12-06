@@ -1,0 +1,29 @@
+<div *ngIf="budgetProgress">
+    <h3>Monthly Budget Progress</h3>
+    <p><strong>Monthly Budget:</strong> {{ budgetProgress.monthlyBudget  }} DH</p>
+    <p><strong>Total Expenses:</strong> {{ budgetProgress.totalExpenses  }} DH</p>
+  
+    <div class="progress-bar-container">
+      <div
+        class="progress-bar"
+        [style.width.%]="budgetProgress.percentageUsed"
+        [ngClass]="{
+          'over-budget': budgetProgress.percentageUsed > 100
+        }"
+      ></div>
+    </div>
+  
+    <p>
+      Remaining Budget: 
+      {{ budgetProgress.monthlyBudget - budgetProgress.totalExpenses  }} DH
+    </p>
+    <!-- <button (click)="notifyUserExceedingBudget()">Notify Budget Exceeded</button> -->
+
+    <div *ngIf="budgetProgress.percentageUsed > 100" class="alert alert-danger">
+      <!-- You have exceeded your monthly budget! -->
+    </div>
+    <div *ngIf="budgetProgress.isOverBudget" class="alert alert-danger">
+        <strong>Alert:</strong> You have exceeded your monthly budget!
+      </div>
+  </div>
+  
